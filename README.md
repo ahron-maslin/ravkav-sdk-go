@@ -30,7 +30,7 @@ import (
 )
 
 func main() {
-    ravkavReader := reader.NewMockReader()
+    ravkavReader := reader.NewReader()
     availableReaders, err := ravkavReader.ListReaders()
     if err != nil {
     	panic("can't find available card readers")
