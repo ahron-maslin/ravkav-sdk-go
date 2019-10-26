@@ -25,8 +25,8 @@ package main
 
 import (
     "fmt"
-    "github.com/ybacuchel/ravkav-sdk-go/card"
-    "github.com/ybacuchel/ravkav-sdk-go/reader"
+    "github.com/ybaruchel/ravkav-sdk-go/card"
+    "github.com/ybaruchel/ravkav-sdk-go/reader"
 )
 
 func main() {
