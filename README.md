@@ -16,7 +16,7 @@ The most simple [ravkav card](https://en.wikipedia.org/wiki/Rav-Kav) reader impl
 ## Download
 To download this package, run:
 ```
-go get github.com/ybaruchel/ravkav-sdk-go...
+go get github.com/ybaruchel/ravkav-sdk-go
 ```
 
 ## Example
