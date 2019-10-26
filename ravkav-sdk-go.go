@@ -1,4 +1,4 @@
-package ravkavsdkgo
+package main
 
 func main() {
 
