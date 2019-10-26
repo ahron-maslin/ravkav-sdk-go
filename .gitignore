@@ -1,0 +1,4 @@
+.vscode
+.idea
+reader/mockreader.go
+main.go
