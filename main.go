@@ -8,10 +8,10 @@ import (
 
 func main() {}
 
-func NewReader() {
-	reader.NewReader()
+func NewReader() contracts.Reader {
+	return reader.NewReader()
 }
 
-func NewCard(reader contracts.Reader) {
-	card.NewByReader(reader)
+func NewCard(reader contracts.Reader) contracts.Card {
+	return card.NewByReader(reader)
 }
