@@ -6,6 +6,8 @@ import (
 	"go-ravkav/reader"
 )
 
+func main() {}
+
 func NewReader() {
 	reader.NewReader()
 }
