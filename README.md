@@ -25,7 +25,7 @@ package main
 
 import (
     "fmt"
-    ravkavSdk "github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go"
+    ravkavSdk "github.com/ybaruchel/ravkav-sdk-go"
 )
 
 func main() {
