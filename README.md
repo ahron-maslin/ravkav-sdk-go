@@ -25,12 +25,11 @@ package main
 
 import (
     "fmt"
-    "github.com/ybaruchel/ravkav-sdk-go/card"
-    "github.com/ybaruchel/ravkav-sdk-go/reader"
+    ravkavSdk "github.com/ybaruchel/ravkav-sdk-go"
 )
 
 func main() {
-    ravkavReader := reader.NewReader()
+    ravkavReader := ravkavSdk.NewReader()
     availableReaders, err := ravkavReader.ListReaders()
     if err != nil {
     	panic("can't find available card readers")
@@ -46,7 +45,7 @@ func main() {
     	}
     }()
     
-    c := card.NewByReader(ravkavReader) // Get new card instance
+    c := ravkavSdk.NewCard(ravkavReader) // Get new card instance
     err = c.Populate()                  // Populate the card instance with physical card records
     if err != nil {
     	panic(err)
