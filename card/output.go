@@ -2,7 +2,7 @@ package card
 
 import (
 	"encoding/json"
-	"go-ravkav/contracts"
+	"ravkav-sdk-go/contracts"
 )
 
 type Output struct {

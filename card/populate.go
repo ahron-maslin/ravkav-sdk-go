@@ -3,8 +3,8 @@ package card
 import (
 	"bytes"
 	"fmt"
-	"go-ravkav/commands"
-	"go-ravkav/contracts"
+	"ravkav-sdk-go/commands"
+	"ravkav-sdk-go/contracts"
 )
 
 type Populate struct {

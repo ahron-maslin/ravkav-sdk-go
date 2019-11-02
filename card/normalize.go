@@ -2,8 +2,8 @@ package card
 
 import (
 	"fmt"
-	"go-ravkav/card/normalizers"
-	"go-ravkav/contracts"
+	"ravkav-sdk-go/card/normalizers"
+	"ravkav-sdk-go/contracts"
 )
 
 var normalizersArr map[string]func(_ contracts.CardOutput) contracts.Normalizer = map[string]func(_ contracts.CardOutput) contracts.Normalizer{

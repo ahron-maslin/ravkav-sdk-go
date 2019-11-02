@@ -2,8 +2,8 @@ package normalizers
 
 import (
 	"encoding/hex"
-	"go-ravkav/card/parsers"
-	"go-ravkav/contracts"
+	"ravkav-sdk-go/card/parsers"
+	"ravkav-sdk-go/contracts"
 	"strconv"
 )
 

@@ -3,7 +3,7 @@ package reader
 import (
 	"errors"
 	"github.com/ebfe/scard"
-	"go-ravkav/contracts"
+	"ravkav-sdk-go/contracts"
 )
 
 type Reader struct {

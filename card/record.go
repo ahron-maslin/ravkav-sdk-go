@@ -2,8 +2,8 @@ package card
 
 import (
 	"bytes"
-	"go-ravkav/card/parsers"
-	"go-ravkav/contracts"
+	"ravkav-sdk-go/card/parsers"
+	"ravkav-sdk-go/contracts"
 )
 
 // Record Single record
