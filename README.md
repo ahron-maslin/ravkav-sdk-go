@@ -1,4 +1,4 @@
-# github.com/ybaruchel/ravkav-sdk-go
+# ravkav-sdk-go
 
 
 <p align="center">
