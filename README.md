@@ -2,13 +2,13 @@
 
 
 <p align="center">
-    <img width="150" alt="github.com/ybaruchel/ravkav-sdk-go" src="https://github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go/blob/master/assets/logo.png">
+    <img width="150" alt="github.com/ybaruchel/ravkav-sdk-go" src="https://github.com/ybaruchel/ravkav-sdk-go/blob/master/assets/logo.png">
 </p>
 
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go/blob/master/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go)](https://goreportcard.com/report/github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go)
-[![Go Doc](https://godoc.org/github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go?status.svg)](https://godoc.org/github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ybaruchel/ravkav-sdk-go/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ybaruchel/ravkav-sdk-go)](https://goreportcard.com/report/github.com/ybaruchel/ravkav-sdk-go)
+[![Go Doc](https://godoc.org/github.com/ybaruchel/ravkav-sdk-go?status.svg)](https://godoc.org/github.com/ybaruchel/ravkav-sdk-go)
 
 ## Overview
 The most simple [ravkav card](https://en.wikipedia.org/wiki/Rav-Kav) reader implemented in golang
@@ -16,7 +16,7 @@ The most simple [ravkav card](https://en.wikipedia.org/wiki/Rav-Kav) reader impl
 ## Download
 To download this package, run:
 ```
-go get github.com/ybaruchel/github.com/ybaruchel/ravkav-sdk-go
+go get github.com/ybaruchel/ravkav-sdk-go
 ```
 
 ## Example
