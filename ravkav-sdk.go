@@ -1,4 +1,4 @@
-package ravkav
+package ravkavSdk
 
 import (
 	"github.com/ybaruchel/ravkav-sdk-go/card"
