@@ -1,4 +1,4 @@
 .vscode
 .idea
 reader/mockreader.go
-main.go
+test.go
