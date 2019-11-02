@@ -57,13 +57,13 @@ func (n *environmentNormalizer) Normalize(record contracts.Record, recordIndex i
 			"number":      parsers.ParseEn1545Number(holderNumber),
 			"isAnonymous": n.isAnonymous(holderNumber),
 			"profiles": []map[string]string{
-				map[string]string{
+				{
 					"code":    holderProf1Code,
 					"name":    n.profile(holderProf1Code),
 					"date":    parsers.ParseEn1545Date(holderProf1Date),
 					"isValid": n.holderProfileIsValid(parsers.ParseEn1545Date(holderProf1Date)),
 				},
-				map[string]string{
+				{
 					"code":    holderProf2Code,
 					"name":    n.profile(holderProf2Code),
 					"date":    parsers.ParseEn1545Date(holderProf2Date),

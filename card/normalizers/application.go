@@ -18,7 +18,7 @@ func (n *applicationNormalizer) Normalize(record contracts.Record, recordIndex i
 	bytes = bytes[19 : bytes[18]+19]
 
 	var bytesLong []byte = []byte{0, 0, 0, 0, 0, 0, 0, 0}
-	for i, _ := range bytes {
+	for i := range bytes {
 		bytesLong[(8-len(bytes))+i] = bytes[i]
 	}
 
