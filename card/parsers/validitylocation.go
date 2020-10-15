@@ -58,8 +58,8 @@ func (v *ValidityLocation) PredefinedContractVL() error {
 	}
 	v.locations = append(v.locations, map[string]string{
 		"validityType": "PredefinedContractVL",
-		"ettb":         strconv.Itoa(Hex2Int(ettb)),
-		"shareCode":    strconv.Itoa(Hex2Int(shareCode)),
+		"ettb":         strconv.Itoa(Hex2Int64(ettb)),
+		"shareCode":    strconv.Itoa(Hex2Int64(shareCode)),
 	})
 	return nil
 }

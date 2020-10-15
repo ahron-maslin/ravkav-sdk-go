@@ -25,7 +25,7 @@ func (n *eventNormalizer) Normalize(record contracts.Record, recordIndex int) (m
 	dateTimeFirstStamp, err := stream.Read(30) // Parse as calypso date
 	bestContractPriorities, err := n.bestContractPriorities(stream)
 	locationRead, err := stream.Read(7)
-	location := parsers.Hex2Int("00" + locationRead)
+	location := parsers.Hex2Int64("00" + locationRead)
 	if err != nil {
 		return nil, fmt.Errorf("error reading event bits | %s", err)
 	}
@@ -40,7 +40,7 @@ func (n *eventNormalizer) Normalize(record contracts.Record, recordIndex int) (m
 	}
 	interchangeRights, err := stream.BitConditionRead(location, 6, 8)
 	extensionRead, err := stream.Read(3)
-	extension := parsers.Hex2Int("00" + extensionRead)
+	extension := parsers.Hex2Int64("00" + extensionRead)
 	if err != nil {
 		return nil, fmt.Errorf("error converting event extension to int | %s", err)
 	}

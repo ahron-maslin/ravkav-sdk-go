@@ -32,7 +32,7 @@ func (n *contractNormalizer) Normalize(record contracts.Record, recordIndex int)
 	saleNumberDaily, err := stream.Read(10)
 	journeyInterchanges, err := stream.Read(1)
 	validityInfoRead, err := stream.Read(9)
-	validityInfo := parsers.Hex2Int("00" + validityInfoRead)
+	validityInfo := parsers.Hex2Int64("00" + validityInfoRead)
 	if err != nil {
 		return nil, fmt.Errorf("error reading contract bits | %s", err)
 	}
@@ -59,7 +59,7 @@ func (n *contractNormalizer) Normalize(record contracts.Record, recordIndex int)
 		if err != nil {
 			return nil, fmt.Errorf("error reading spatial type from stream | %s", err)
 		}
-		spatialType := parsers.Hex2Int(spatialTypeRead)
+		spatialType := parsers.Hex2Int64(spatialTypeRead)
 		if spatialType != 15 {
 			err := validityLocations.Parse(spatialType)
 			if err != nil {

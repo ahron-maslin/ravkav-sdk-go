@@ -23,6 +23,6 @@ func (n *applicationNormalizer) Normalize(record contracts.Record, recordIndex i
 	}
 
 	return map[string]interface{}{
-		"cardNumber": strconv.Itoa(parsers.Hex2Int(hex.EncodeToString(bytesLong))),
+		"cardNumber": strconv.Itoa(parsers.Hex2Int64(hex.EncodeToString(bytesLong))),
 	}, nil
 }
