@@ -25,7 +25,7 @@ func (s *StreamReader) Read(bits int) (string, error) {
 	return hexVal, nil
 }
 
-func (s *StreamReader) BitConditionRead(validator int, bit uint, bits int) (string, error) {
+func (s *StreamReader) BitConditionRead(validator int64, bit uint, bits int) (string, error) {
 	if s.IsBitOn(validator, bit) {
 		readBits, err := s.Read(bits)
 		if err != nil {
@@ -36,7 +36,7 @@ func (s *StreamReader) BitConditionRead(validator int, bit uint, bits int) (stri
 	return "0", nil
 }
 
-func (s *StreamReader) IsBitOn(validator int, bit uint) bool {
+func (s *StreamReader) IsBitOn(validator int64, bit uint) bool {
 	return ((1 << bit) & validator) != 0
 }
 func (s *StreamReader) SkipBits(bits int) {

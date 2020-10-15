@@ -16,8 +16,8 @@ func NewValidityLocation(stream *StreamReader) *ValidityLocation {
 	return &ValidityLocation{stream: stream}
 }
 
-func (v *ValidityLocation) Parse(spatialType int) error {
-	var spatialTypeHandlers map[int]func() error = map[int]func() error{
+func (v *ValidityLocation) Parse(spatialType int64) error {
+	var spatialTypeHandlers map[int64]func() error = map[int64]func() error{
 		0:  v.Zones,
 		1:  v.FareCode,
 		2:  v.LinesList,
@@ -58,8 +58,8 @@ func (v *ValidityLocation) PredefinedContractVL() error {
 	}
 	v.locations = append(v.locations, map[string]string{
 		"validityType": "PredefinedContractVL",
-		"ettb":         strconv.Itoa(Hex2Int64(ettb)),
-		"shareCode":    strconv.Itoa(Hex2Int64(shareCode)),
+		"ettb":         strconv.FormatInt(Hex2Int64(ettb), 10),
+		"shareCode":    strconv.FormatInt(Hex2Int64(shareCode), 10),
 	})
 	return nil
 }

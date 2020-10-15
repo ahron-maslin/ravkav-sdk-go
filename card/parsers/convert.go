@@ -28,8 +28,8 @@ func BinToHex(s string) (string, error) {
 	return fmt.Sprintf("%x", ui), err
 }
 
-func Hex2Int64(hexStr string) int {
+func Hex2Int64(hexStr string) int64 {
 	// base 16 for hexadecimal
 	result, _ := strconv.ParseUint(hexStr, 16, 64)
-	return int(result)
+	return int64(result)
 }

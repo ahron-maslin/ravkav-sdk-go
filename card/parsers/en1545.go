@@ -6,12 +6,12 @@ import (
 )
 
 func ParseEn1545Number(hexString string) string {
-	return strconv.Itoa(Hex2Int64(hexString))
+	return strconv.FormatInt(Hex2Int64(hexString), 10)
 }
 
 func ParseEn1545Date(hexString string) string {
 	const epoch int64 = 852076800000
-	return strconv.Itoa(Hex2Int64(hexString)*1000*60*60*24 + epoch)
+	return strconv.FormatInt(Hex2Int64(hexString)*1000*60*60*24+epoch, 10)
 }
 
 func ParseConcatenatedDate(date string) string {

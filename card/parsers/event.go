@@ -59,12 +59,12 @@ func (e *Event) Action(code string) string {
 	return ""
 }
 
-func (e *Event) TimeRealDate(secondsSince1997 string) int {
+func (e *Event) TimeRealDate(secondsSince1997 string) int64 {
 	secondsSince1997Int, err := strconv.Atoi(secondsSince1997)
 	if err != nil || secondsSince1997Int == 0 {
 		return 0
 	}
-	return secondsSince1997Int*1000 + 852076800000
+	return int64(secondsSince1997Int)*1000 + int64(852076800000)
 }
 
 func (e *Event) Transport(code string) string {

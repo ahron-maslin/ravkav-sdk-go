@@ -2,9 +2,10 @@ package normalizers
 
 import (
 	"encoding/hex"
+	"strconv"
+
 	"github.com/derkinderfietsen/ravkav-sdk-go/card/parsers"
 	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
-	"strconv"
 )
 
 type applicationNormalizer struct{}
@@ -23,6 +24,6 @@ func (n *applicationNormalizer) Normalize(record contracts.Record, recordIndex i
 	}
 
 	return map[string]interface{}{
-		"cardNumber": strconv.Itoa(parsers.Hex2Int64(hex.EncodeToString(bytesLong))),
+		"cardNumber": strconv.FormatInt(parsers.Hex2Int64(hex.EncodeToString(bytesLong)), 10),
 	}, nil
 }

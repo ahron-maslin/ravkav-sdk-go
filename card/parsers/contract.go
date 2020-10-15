@@ -238,5 +238,5 @@ func (c *Contract) InvertedDate(hexString string) (string, error) {
 	intVal := Hex2Int64(hexVal)
 	xorVal := intVal ^ 0x3fff
 	dateVal := 852069600 + xorVal*24*3600
-	return strconv.Itoa(dateVal * 1000), nil
+	return strconv.FormatInt(dateVal*1000, 10), nil
 }
