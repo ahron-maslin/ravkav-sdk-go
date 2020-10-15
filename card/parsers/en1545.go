@@ -22,5 +22,5 @@ func ParseConcatenatedDate(date string) string {
 	if err != nil {
 		return ""
 	}
-	return strconv.Itoa(int(timeDate.UnixNano() / 1000000)) // To millisecond date
+	return strconv.FormatInt(int64(timeDate.UnixNano()/1000000), 10) // To millisecond date
 }
