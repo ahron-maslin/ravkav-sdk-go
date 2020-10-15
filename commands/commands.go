@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/ybaruchel/ravkav-sdk-go/contracts"
+	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
 )
 
 type Command struct {

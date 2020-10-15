@@ -1,7 +1,7 @@
 package card
 
 import (
-	"github.com/ybaruchel/ravkav-sdk-go/contracts"
+	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
 )
 
 type Records struct {
