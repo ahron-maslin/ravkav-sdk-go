@@ -2,8 +2,8 @@ package normalizers
 
 import (
 	"fmt"
-	"github.com/derkinderfietsen/ravkav-sdk-go/card/parsers"
-	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
+	"github.com/ahron-maslin/ravkav-sdk-go/card/parsers"
+	"github.com/ahron-maslin/ravkav-sdk-go/contracts"
 	"math"
 	"strconv"
 )

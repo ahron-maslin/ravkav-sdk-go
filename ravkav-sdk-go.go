@@ -1,9 +1,9 @@
 package ravkavsdkgo
 
 import (
-	"github.com/derkinderfietsen/ravkav-sdk-go/card"
-	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
-	"github.com/derkinderfietsen/ravkav-sdk-go/reader"
+	"github.com/ahron-maslin/ravkav-sdk-go/card"
+	"github.com/ahron-maslin/ravkav-sdk-go/contracts"
+	"github.com/ahron-maslin/ravkav-sdk-go/reader"
 )
 
 func main() {}

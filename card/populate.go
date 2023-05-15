@@ -3,8 +3,8 @@ package card
 import (
 	"bytes"
 	"fmt"
-	"github.com/derkinderfietsen/ravkav-sdk-go/commands"
-	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
+	"github.com/ahron-maslin/ravkav-sdk-go/commands"
+	"github.com/ahron-maslin/ravkav-sdk-go/contracts"
 )
 
 type Populate struct {

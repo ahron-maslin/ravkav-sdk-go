@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"strconv"
 
-	"github.com/derkinderfietsen/ravkav-sdk-go/card/parsers"
-	"github.com/derkinderfietsen/ravkav-sdk-go/contracts"
+	"github.com/ahron-maslin/ravkav-sdk-go/card/parsers"
+	"github.com/ahron-maslin/ravkav-sdk-go/contracts"
 )
 
 type applicationNormalizer struct{}

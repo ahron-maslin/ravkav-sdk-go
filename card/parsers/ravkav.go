@@ -1,7 +1,7 @@
 package parsers
 
 import (
-	"github.com/derkinderfietsen/ravkav-sdk-go/card/parsers/dictionaries"
+	"github.com/ahron-maslin/ravkav-sdk-go/card/parsers/dictionaries"
 	"strconv"
 )
 
